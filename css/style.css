@@ -1,0 +1,451 @@
+@font-face {
+    font-family: "Relaway";
+    src: url("../assets/fonts/Raleway/Raleway-VariableFont_wght.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Relaway";
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-size: 28px;
+    font-weight: bolder;
+    padding: 15px;
+}
+
+
+/* HEADER */
+
+header {
+    margin: 0 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    height: 100%;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+header nav p {
+    padding: 43px 20px;
+    margin-right: 40px;
+    border-top: solid 2px transparent;
+}
+
+header nav p:hover {
+    border-top: solid 2px #0065FC;
+    color: #0065FC;
+    cursor: pointer;
+}
+
+
+/* MAIN */
+
+main {
+    margin: 0 2%;
+}
+
+
+/* SECTIONS */
+
+section {
+    margin: 50px 0;
+}
+
+section#param {
+    line-height: 50px;
+}
+
+section#param .info {
+    margin: 20px 0;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+}
+
+section#param form {
+    margin: 20px 0;
+    display: flex;
+}
+
+section#param form input {
+    outline: none;
+    padding: 0 20px;
+    border: solid 1px #F2F2F2;
+}
+
+section#param form input[type="search"] {
+    font-weight: bold;
+    color: #000000;
+}
+
+section#param form button {
+    background-color: #0065FC;
+    color: #FFFFFF;
+    border-radius: 0 10px 10px 0;
+    outline: none;
+    padding: 0 20px;
+    border: solid 1px #F2F2F2;
+    cursor: pointer;
+}
+
+section#param form button i {
+    background-color: inherit;
+    padding: inherit;
+    border-radius: inherit;
+    visibility: hidden;
+    display: none;
+    padding: 15px;
+}
+
+section#param form i {
+    background-color: #F2F2F2;
+    padding: 15px;
+    border-radius: 10px 0 0 10px;
+}
+
+section#param ul {
+    display: flex;
+    gap: 20px;
+}
+
+section#param ul li:first-child {
+    padding: 15px;
+    border: inherit;
+    cursor: inherit;
+    transition: inherit;
+}
+
+section#param ul li:first-child:hover {
+    background-color: inherit;
+    color: inherit;
+}
+
+section#param ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    padding: 0 15px;
+    border: solid 2px #F2F2F2;
+    position: relative;
+    line-height: normal;
+    cursor: pointer;
+    transition: background-color 400ms, color 400ms;
+}
+
+section#param ul li:hover {
+    background-color: #0065FC;
+    color: #FFFFFF;
+}
+
+section#param ul li i {
+    position: absolute;
+    left: -5px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    height: 100%;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+section#param ul li b:first-child {
+    margin-left: inherit;
+}
+
+section#param ul li b {
+    margin-left: 50px;
+}
+
+section#param p i {
+    color: #0065FC;
+    border: solid 2px #F2F2F2;
+    margin-right: 15px;
+    border: solid 2px #F2F2F2;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+
+/* SECTION HOSTING */
+
+section#hosting {
+    display: flex;
+    gap: 35px;
+}
+
+section#hosting div {
+    flex: 2;
+}
+
+section#hosting div:last-child {
+    flex: 1;
+}
+
+section#hosting div {
+    background-color: #F2F2F2;
+    padding: 15px;
+    line-height: 50px;
+    border-radius: 20px;
+}
+
+section#hosting h3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+section#hosting a:last-child {
+    padding: 15px;
+}
+
+section#hosting div p:last-child {
+    padding: 15px;
+}
+
+
+/* WRAPPER & CARD */
+
+.wrapper {
+    display: flex;
+    gap: 35px;
+}
+
+.wrapper .card {
+    min-width: 30%;
+    background-color: #FFFFFF !important;
+    box-shadow: rgba(100, 100, 111, 0.4) 0 7px 29px 0;
+    padding: 5px !important;
+    line-height: 25px !important;
+    position: relative;
+    border-radius: 20px;
+}
+
+.wrapper .card img {
+    position: relative;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+}
+
+.wrapper .card ul {
+    display: flex;
+}
+
+.wrapper .card ul li i {
+    color: #F2F2F2;
+}
+
+.wrapper .card ul .active i {
+    color: #0065FC;
+}
+
+
+/* LES PLUS POPULAIRES */
+
+section#hosting div:last-child h2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+section#hosting div:last-child .wrapper {
+    flex-direction: column;
+}
+
+section#hosting div:last-child .wrapper .card {
+    display: flex;
+    min-width: inherit;
+    max-width: inherit;
+    width: 100%;
+}
+
+section#hosting div:last-child .wrapper .card img {
+    max-width: 35%;
+    border-radius: 20px 0 0 20px;
+}
+
+section#hosting div:last-child .wrapper .card div {
+    background-color: #FFFFFF;
+    line-height: inherit;
+    padding: 15px;
+}
+
+section#hosting div:last-child .wrapper .card ul {
+    position: absolute;
+    bottom: 10px;
+}
+
+
+/* ACTVITES */
+
+section#activity .wrapper div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+section#activity .wrapper .card {
+    padding: 0 !important;
+}
+
+section#activity .wrapper .card a {
+    padding: 15px;
+}
+
+section#activity .wrapper div:nth-child(odd) .card img {
+    height: 100%;
+}
+
+section#activity .wrapper div:nth-child(even) {
+    gap: 35px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #F2F2F2;
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 200px;
+}
+
+footer ul {
+    line-height: 25px;
+}
+
+footer ul li:first-child {
+    padding-bottom: 10px;
+}
+
+
+/* MEDIA */
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+        margin: inherit;
+    }
+    header img {
+        width: fit-content;
+    }
+    header nav {
+        justify-content: space-between;
+        width: 100%;
+    }
+    header nav p {
+        padding: 25px 0;
+        border-top: inherit;
+        border-bottom: solid 2px transparent;
+        margin-right: inherit;
+        width: 100%;
+        text-align: center;
+    }
+    header nav p:hover {
+        border-top: inherit;
+        border-bottom: solid 2px #0065FC;
+    }
+    section#param {
+        margin: 0 2%;
+        padding: 15px;
+    }
+    h1 {
+        padding: 0;
+    }
+    section#param ul {
+        flex-direction: column;
+    }
+    section#param ul li {
+        width: fit-content;
+    }
+    section#param ul li b {
+        padding: 15px;
+    }
+    section#param form {
+        justify-content: center;
+    }
+    section#param form button {
+        padding: 0;
+        font-size: 0;
+    }
+    section#param form button i {
+        visibility: visible;
+        display: block;
+        font-size: initial;
+    }
+    section#hosting {
+        flex-direction: column-reverse;
+    }
+    section#hosting div {
+        background-color: inherit;
+    }
+    section#hosting div .wrapper {
+        flex-direction: column;
+        margin: 35px 4%;
+    }
+    section#activity .wrapper {
+        flex-direction: column;
+        margin: 0 4%;
+    }
+    section#activity .wrapper div:nth-child(odd) .card img {
+        height: 150px;
+    }
+    section#activity .wrapper div:nth-child(even) .card:nth-child(even) {
+        gap: 0;
+    }
+    section#hosting .wrapper {
+        padding: 0;
+        margin: 35px 0;
+    }
+    section#hosting div {
+        padding: 0;
+    }
+    footer {
+        flex-direction: column;
+        gap: 35px;
+    }
+    section#hosting div:last-child {
+        background-color: #F2F2F2;
+    }
+    section#hosting div:last-child .card:last-child {
+        border-radius: 20px;
+    }
+    main {
+        margin: 0;
+    }
+    .most-popular {
+        border-radius: 0 !important;
+        padding: 25px 0 !important;
+    }
+}
