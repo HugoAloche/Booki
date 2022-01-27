@@ -78,34 +78,37 @@ section {
     margin: 50px 0;
 }
 
-section#param {
+
+/* SECTION PARAM */
+
+#param {
     line-height: 50px;
 }
 
-section#param .info {
+#param .info {
     margin: 20px 0;
     line-height: normal;
     display: flex;
     align-items: center;
 }
 
-section#param form {
+#param form {
     margin: 20px 0;
     display: flex;
 }
 
-section#param form input {
+#param form input {
     outline: none;
     padding: 0 20px;
     border: solid 1px #F2F2F2;
 }
 
-section#param form input[type="search"] {
+#param form input[type="search"] {
     font-weight: bold;
     color: #000000;
 }
 
-section#param form button {
+#param form button {
     background-color: #0065FC;
     color: #FFFFFF;
     border-radius: 0 10px 10px 0;
@@ -115,7 +118,7 @@ section#param form button {
     cursor: pointer;
 }
 
-section#param form button i {
+#param form button i {
     background-color: inherit;
     padding: inherit;
     border-radius: inherit;
@@ -124,30 +127,30 @@ section#param form button i {
     padding: 15px;
 }
 
-section#param form i {
+#param form i {
     background-color: #F2F2F2;
     padding: 15px;
     border-radius: 10px 0 0 10px;
 }
 
-section#param ul {
+#param ul {
     display: flex;
     gap: 20px;
 }
 
-section#param ul li:first-child {
+#param ul li:first-child {
     padding: 15px;
     border: inherit;
     cursor: inherit;
     transition: inherit;
 }
 
-section#param ul li:first-child:hover {
+#param ul li:first-child:hover {
     background-color: inherit;
     color: inherit;
 }
 
-section#param ul li {
+#param ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -161,12 +164,12 @@ section#param ul li {
     transition: background-color 400ms, color 400ms;
 }
 
-section#param ul li:hover {
+#param ul li:hover {
     background-color: #0065FC;
     color: #FFFFFF;
 }
 
-section#param ul li i {
+#param ul li i {
     position: absolute;
     left: -5px;
     color: #0065FC;
@@ -176,15 +179,15 @@ section#param ul li i {
     padding: 15px;
 }
 
-section#param ul li b:first-child {
+#param ul li b:first-child {
     margin-left: inherit;
 }
 
-section#param ul li b {
+#param ul li b {
     margin-left: 50px;
 }
 
-section#param p i {
+#param p i {
     color: #0065FC;
     border: solid 2px #F2F2F2;
     margin-right: 15px;
@@ -196,36 +199,36 @@ section#param p i {
 
 /* SECTION HOSTING */
 
-section#hosting {
+#hosting {
     display: flex;
     gap: 35px;
 }
 
-section#hosting div {
+#hosting div {
     flex: 2;
 }
 
-section#hosting div:last-child {
+#hosting div:last-child {
     flex: 1;
 }
 
-section#hosting div {
+#hosting div {
     background-color: #F2F2F2;
     padding: 15px;
     line-height: 50px;
     border-radius: 20px;
 }
 
-section#hosting h3 {
+#hosting h3 {
     display: flex;
     justify-content: space-between;
 }
 
-section#hosting a:last-child {
+#hosting a:last-child {
     padding: 15px;
 }
 
-section#hosting div p:last-child {
+#hosting div p:last-child {
     padding: 15px;
 }
 
@@ -270,34 +273,34 @@ section#hosting div p:last-child {
 
 /* LES PLUS POPULAIRES */
 
-section#hosting div:last-child h2 {
+#hosting div:last-child h2 {
     display: flex;
     justify-content: space-between;
 }
 
-section#hosting div:last-child .wrapper {
+#hosting div:last-child .wrapper {
     flex-direction: column;
 }
 
-section#hosting div:last-child .wrapper .card {
+#hosting div:last-child .wrapper .card {
     display: flex;
     min-width: inherit;
     max-width: inherit;
     width: 100%;
 }
 
-section#hosting div:last-child .wrapper .card img {
+#hosting div:last-child .wrapper .card img {
     max-width: 35%;
     border-radius: 20px 0 0 20px;
 }
 
-section#hosting div:last-child .wrapper .card div {
+#hosting div:last-child .wrapper .card div {
     background-color: #FFFFFF;
     line-height: inherit;
     padding: 15px;
 }
 
-section#hosting div:last-child .wrapper .card ul {
+#hosting div:last-child .wrapper .card ul {
     position: absolute;
     bottom: 10px;
 }
@@ -305,25 +308,25 @@ section#hosting div:last-child .wrapper .card ul {
 
 /* ACTVITES */
 
-section#activity .wrapper div {
+#activity .wrapper div {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
 
-section#activity .wrapper .card {
+#activity .wrapper .card {
     padding: 0 !important;
 }
 
-section#activity .wrapper .card a {
+#activity .wrapper .card a {
     padding: 15px;
 }
 
-section#activity .wrapper div:nth-child(odd) .card img {
+#activity .wrapper div:nth-child(odd) .card img {
     height: 100%;
 }
 
-section#activity .wrapper div:nth-child(even) {
+#activity .wrapper div:nth-child(even) {
     gap: 35px;
 }
 
@@ -376,69 +379,69 @@ footer ul li:first-child {
         border-top: inherit;
         border-bottom: solid 2px #0065FC;
     }
-    section#param {
+    #param {
         margin: 0 2%;
         padding: 15px;
     }
     h1 {
         padding: 0;
     }
-    section#param ul {
+    #param ul {
         flex-direction: column;
     }
-    section#param ul li {
+    #param ul li {
         width: fit-content;
     }
-    section#param ul li b {
+    #param ul li b {
         padding: 15px;
     }
-    section#param form {
+    #param form {
         justify-content: center;
     }
-    section#param form button {
+    #param form button {
         padding: 0;
         font-size: 0;
     }
-    section#param form button i {
+    #param form button i {
         visibility: visible;
         display: block;
         font-size: initial;
     }
-    section#hosting {
+    #hosting {
         flex-direction: column-reverse;
     }
-    section#hosting div {
+    #hosting div {
         background-color: inherit;
     }
-    section#hosting div .wrapper {
+    #hosting div .wrapper {
         flex-direction: column;
         margin: 35px 4%;
     }
-    section#activity .wrapper {
+    #activity .wrapper {
         flex-direction: column;
         margin: 0 4%;
     }
-    section#activity .wrapper div:nth-child(odd) .card img {
+    #activity .wrapper div:nth-child(odd) .card img {
         height: 150px;
     }
-    section#activity .wrapper div:nth-child(even) .card:nth-child(even) {
+    #activity .wrapper div:nth-child(even) .card:nth-child(even) {
         gap: 0;
     }
-    section#hosting .wrapper {
+    #hosting .wrapper {
         padding: 0;
         margin: 35px 0;
     }
-    section#hosting div {
+    #hosting div {
         padding: 0;
     }
     footer {
         flex-direction: column;
         gap: 35px;
     }
-    section#hosting div:last-child {
+    #hosting div:last-child {
         background-color: #F2F2F2;
     }
-    section#hosting div:last-child .card:last-child {
+    #hosting div:last-child .card:last-child {
         border-radius: 20px;
     }
     main {
