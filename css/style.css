@@ -450,6 +450,9 @@ footer ul li:first-child {
         border-radius: 0 !important;
         padding: 25px 0 !important;
     }
+    #param .wrapper {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -469,14 +472,22 @@ footer ul li:first-child {
         top: 0;
         left: -20px;
     }
-    h1 br {
-        display: block;
-    }
     h1,
     h2,
     h3,
     h4 {
         font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+    }
+    #param form input[type="search"] {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    h1 br {
+        display: block;
     }
     #param .info br {
         display: block;
