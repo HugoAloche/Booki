@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Relaway";
+    scroll-behavior: smooth;
 }
 
 body {
@@ -33,6 +34,10 @@ h4 {
     padding: 15px;
 }
 
+h1 br {
+    display: none;
+}
+
 
 /* HEADER */
 
@@ -52,13 +57,13 @@ header nav {
     align-items: baseline;
 }
 
-header nav p {
+header nav a {
     padding: 43px 20px;
     margin-right: 40px;
     border-top: solid 2px transparent;
 }
 
-header nav p:hover {
+header nav a:hover {
     border-top: solid 2px #0065FC;
     color: #0065FC;
     cursor: pointer;
@@ -92,6 +97,10 @@ section {
     align-items: center;
 }
 
+#param .info br {
+    display: none;
+}
+
 #param form {
     margin: 20px 0;
     display: flex;
@@ -122,10 +131,11 @@ section {
     background-color: inherit;
     padding: inherit;
     border-radius: inherit;
-    /* RENDRE INVISIBLE L'ICON */
-    visibility: hidden;
-    display: none;
     padding: 15px;
+}
+
+#param form button #iconSearchBar {
+    display: none;
 }
 
 #param form i {
@@ -157,7 +167,7 @@ section {
     align-items: center;
     gap: 20px;
     border-radius: 20px;
-    padding: 0 15px;
+    padding: 15px 15px;
     border: solid 2px #F2F2F2;
     position: relative;
     line-height: normal;
@@ -327,8 +337,8 @@ section {
     height: 100%;
 }
 
-#activity .wrapper div:nth-child(even) {
-    gap: 35px;
+#activity .wrapper div:nth-child(even) .card:last-child {
+    margin-top: 35px;
 }
 
 
@@ -340,11 +350,11 @@ footer {
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    gap: 200px;
 }
 
 footer ul {
     line-height: 25px;
+    flex: 1;
 }
 
 footer ul li:first-child {
@@ -354,7 +364,7 @@ footer ul li:first-child {
 
 /* MEDIA */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     header {
         flex-direction: column;
         align-items: center;
@@ -368,7 +378,7 @@ footer ul li:first-child {
         justify-content: space-between;
         width: 100%;
     }
-    header nav p {
+    header nav a {
         padding: 25px 0;
         border-top: inherit;
         border-bottom: solid 2px transparent;
@@ -376,7 +386,7 @@ footer ul li:first-child {
         width: 100%;
         text-align: center;
     }
-    header nav p:hover {
+    header nav a:hover {
         border-top: inherit;
         border-bottom: solid 2px #0065FC;
     }
@@ -388,27 +398,13 @@ footer ul li:first-child {
         padding: 0;
     }
     #param ul {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
     #param ul li {
         width: fit-content;
     }
-    #param ul li b {
-        padding: 15px;
-    }
     #param form {
         justify-content: center;
-    }
-    #param form button {
-        padding: 0;
-        /* Fait disparaitre le text du bouton */
-        font-size: 0;
-    }
-    #param form button i {
-        /* Rendre visible l'icon */
-        visibility: visible;
-        display: block;
-        font-size: initial;
     }
     #hosting {
         flex-direction: column-reverse;
@@ -453,5 +449,36 @@ footer ul li:first-child {
     .most-popular {
         border-radius: 0 !important;
         padding: 25px 0 !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #param form button {
+        padding: 0;
+        background-color: inherit;
+        position: relative;
+    }
+    #param form button #textSearchBar {
+        display: none;
+    }
+    #param form button #iconSearchBar {
+        display: block;
+        background-color: #0065FC;
+        border-radius: 15px;
+        position: absolute;
+        top: 0;
+        left: -20px;
+    }
+    h1 br {
+        display: block;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-size: 22px;
+    }
+    #param .info br {
+        display: block;
     }
 }
